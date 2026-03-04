@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo "Připojení NAS"
+
+sudo mount -t nfs 192.168.77.18:/volume1/Rodinas   /nfs/Nas
+
+sudo mount -t nfs 192.168.77.18:/volume1/Filmy   /nfs/Filmy/
+
+sudo mount -t nfs 192.168.77.18:/volume1/Hudba   /nfs/Hudba/
+
