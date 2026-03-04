@@ -1,8 +1,7 @@
-### <div align="center"> 💻 My NixOS config 💻 </div>
+### <div align="center"> 💻 My Void Xfce4 config 💻 </div>
 
 
-##### ✌ Welcome to my repo. Feel free to look inside for an inspiration or just for fun. 
-This is still work in progress.  
+##### ✌ Welcome to my repo.   
 My focus here is Void linux Xfce4.
 
 ## ⚙️ Init a git bare repo
