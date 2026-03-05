@@ -1,6 +1,6 @@
 #!/bin/bash
 
-MyApps="autofs brave-browser btop fastfetch file-roller fish-shell fontmanager fzf galculator git glxinfo gufw gvim hplip-gui intel-video-accel libreoffice libreoffice-i18n-cs libva-utils nfs-utils nix apirus-icon-theme resvg simple-scan thunar-archive-plugin ufw wmctrl xfce4-clipman-plugin xfce4-whiskermenu-plugin yazi"
+MyApps="autofs brave-browser btop evince fastfetch file-roller fish-shell fontmanager fzf galculator git glxinfo gufw gvim hplip-gui intel-video-accel libreoffice libreoffice-i18n-cs libva-utils nfs-utils nix apirus-icon-theme resvg simple-scan thunar-archive-plugin ufw wmctrl xfce4-clipman-plugin xfce4-whiskermenu-plugin yazi"
 
 echo "Aktualizace po první instalaci"
 sleep 2

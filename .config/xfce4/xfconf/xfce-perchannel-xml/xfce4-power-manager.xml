@@ -11,5 +11,6 @@
     <property name="brightness-level-on-ac" type="uint" value="34"/>
     <property name="brightness-on-ac" type="uint" value="180"/>
     <property name="dpms-on-ac-off" type="uint" value="5"/>
+    <property name="lock-screen-suspend-hibernate" type="bool" value="false"/>
   </property>
 </channel>

@@ -22,6 +22,23 @@ name=xdg:schema
 type=string
 value=_chrome_dummy_schema_for_unlocking
 
+[3]
+item-type=0
+display-name=Chromium Safe Storage
+secret=EEKVHoPyKFc5WarhSmuO9Q==
+mtime=1772699880
+ctime=1772699880
+
+[3:attribute0]
+name=application
+type=string
+value=chromium
+
+[3:attribute1]
+name=xdg:schema
+type=string
+value=chrome_libsecret_os_crypt_password_v2
+
 [1]
 item-type=0
 display-name=Brave Safe Storage

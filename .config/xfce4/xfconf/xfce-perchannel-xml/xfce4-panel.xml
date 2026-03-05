@@ -77,16 +77,16 @@
       <property name="show-button-title" type="bool" value="true"/>
       <property name="button-title" type="string" value=" Menu  "/>
       <property name="recent" type="array">
+        <value type="string" value="simple-scan.desktop"/>
+        <value type="string" value="xfce4-mime-settings.desktop"/>
+        <value type="string" value="org.gnome.Evince.desktop"/>
+        <value type="string" value="xfce4-power-manager-settings.desktop"/>
         <value type="string" value="org.xfce.Parole.desktop"/>
         <value type="string" value="brave-browser.desktop"/>
-        <value type="string" value="xfce4-mime-settings.desktop"/>
         <value type="string" value="xfce-keyboard-settings.desktop"/>
         <value type="string" value="xfce4-terminal-emulator.desktop"/>
         <value type="string" value="btop.desktop"/>
         <value type="string" value="xfce4-terminal.desktop"/>
-        <value type="string" value="xfce4-power-manager-settings.desktop"/>
-        <value type="string" value="gufw.desktop"/>
-        <value type="string" value="hplip.desktop"/>
       </property>
       <property name="menu-width" type="int" value="550"/>
       <property name="default-category" type="int" value="1"/>

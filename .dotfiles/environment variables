@@ -1,0 +1,14 @@
+# Paste in /etc
+#
+#
+# This file is parsed by pam_env module
+#
+# Syntax: simple "KEY=VAL" pairs on separate lines
+#
+#
+
+EDITOR=vim
+TERMINAL=xfce4-terminal
+GTK_THEME=Adwaita:dark
+# ADW_DISABLE_PORTAL=1
+ADW_DEBUG_COLOR_SCHEME=prefer-dark

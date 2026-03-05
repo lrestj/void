@@ -116,4 +116,34 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///nfs/Nas/Libor/L%C3%A9ka%C5%99sk%C3%A9%20zpr%C3%A1vy/19057_pu05-hlaseni_hospitalizace_05_int.pdf" added="2026-03-05T09:10:16.378440Z" modified="2026-03-05T09:10:16.378444Z" visited="2026-03-05T09:10:16.378440Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Prohlížeč dokumentů" exec="&apos;org.gnome.Evince %u&apos;" modified="2026-03-05T09:10:16.378441Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///nfs/Nas/Libor/L%C3%A9ka%C5%99sk%C3%A9%20zpr%C3%A1vy/20230711%20Propou%C5%A1t%C4%9Bc%C3%AD%20zpr%C3%A1va%20NRK.pdf" added="2026-03-05T09:10:35.076060Z" modified="2026-03-05T09:10:35.076068Z" visited="2026-03-05T09:10:35.076061Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Prohlížeč dokumentů" exec="&apos;org.gnome.Evince %u&apos;" modified="2026-03-05T09:10:35.076063Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///nfs/Nas/Libor/L%C3%A9ka%C5%99sk%C3%A9%20zpr%C3%A1vy/20260219%20Onkologie%20RK.pdf" added="2026-03-05T09:15:04.013239Z" modified="2026-03-05T09:15:04.013243Z" visited="2026-03-05T09:15:04.013239Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="simple-scan" exec="&apos;simple-scan %u&apos;" modified="2026-03-05T09:15:04.013241Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
