@@ -80,7 +80,6 @@
       <property name="show-button-title" type="bool" value="true"/>
       <property name="button-title" type="string" value=" Menu  "/>
       <property name="recent" type="array">
-        <value type="string" value="zen.desktop"/>
         <value type="string" value="xfce-wm-settings.desktop"/>
         <value type="string" value="xfce-wmtweaks-settings.desktop"/>
         <value type="string" value="xfce-session-settings.desktop"/>
@@ -91,8 +90,10 @@
         <value type="string" value="org.gnome.Evince.desktop"/>
         <value type="string" value="org.xfce.Parole.desktop"/>
       </property>
-      <property name="menu-width" type="int" value="550"/>
+      <property name="menu-width" type="int" value="626"/>
       <property name="default-category" type="int" value="1"/>
+      <property name="menu-height" type="int" value="657"/>
+      <property name="menu-opacity" type="int" value="85"/>
     </property>
     <property name="plugin-10" type="string" value="launcher">
       <property name="items" type="array">
