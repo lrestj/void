@@ -17,6 +17,7 @@
       <value type="string" value="Xfce volume control"/>
       <value type="string" value="xfce4-power-manager"/>
       <value type="string" value="xfce4-settings-helper"/>
+      <value type="string" value="Zen"/>
     </property>
   </property>
 </channel>

@@ -10,7 +10,7 @@
     <property name="show_frame_shadow" type="bool" value="false"/>
     <property name="show_popup_shadow" type="bool" value="false"/>
     <property name="workspace_count" type="int" value="3"/>
-    <property name="wrap_windows" type="bool" value="true"/>
+    <property name="wrap_windows" type="bool" value="false"/>
     <property name="tile_on_move" type="bool" value="true"/>
     <property name="activate_action" type="string" value="bring"/>
     <property name="borderless_maximize" type="bool" value="true"/>
@@ -35,7 +35,7 @@
     <property name="focus_delay" type="int" value="250"/>
     <property name="focus_hint" type="bool" value="true"/>
     <property name="focus_new" type="bool" value="true"/>
-    <property name="frame_opacity" type="int" value="100"/>
+    <property name="frame_opacity" type="int" value="88"/>
     <property name="frame_border_top" type="int" value="0"/>
     <property name="full_width_title" type="bool" value="true"/>
     <property name="horiz_scroll_opacity" type="bool" value="false"/>
@@ -53,7 +53,7 @@
     <property name="raise_with_any_button" type="bool" value="true"/>
     <property name="repeat_urgent_blink" type="bool" value="false"/>
     <property name="resize_opacity" type="int" value="100"/>
-    <property name="scroll_workspaces" type="bool" value="true"/>
+    <property name="scroll_workspaces" type="bool" value="false"/>
     <property name="shadow_delta_height" type="int" value="0"/>
     <property name="shadow_delta_width" type="int" value="0"/>
     <property name="shadow_delta_x" type="int" value="0"/>
@@ -79,8 +79,8 @@
     <property name="wrap_layout" type="bool" value="true"/>
     <property name="wrap_resistance" type="int" value="10"/>
     <property name="wrap_workspaces" type="bool" value="false"/>
-    <property name="zoom_desktop" type="bool" value="true"/>
-    <property name="zoom_pointer" type="bool" value="true"/>
+    <property name="zoom_desktop" type="bool" value="false"/>
+    <property name="zoom_pointer" type="bool" value="false"/>
     <property name="workspace_names" type="array">
       <value type="string" value="Pracovní plocha 1"/>
       <value type="string" value="Pracovní plocha 2"/>
