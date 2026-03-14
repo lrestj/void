@@ -1,0 +1,17 @@
+#!/bin/bash
+
+MyApps="autofs btop brightnessctl evince fastfetch file-roller fish-shell fontmanager fzf galculator git glxinfo gufw gvim hplip-gui intel-video-accel libreoffice libreoffice-i18n-cs libva-utils nfs-utils nix apirus-icon-theme resvg simple-scan thunar-archive-plugin ufw wmctrl xfce4-clipman-plugin xfce4-whiskermenu-plugin xclip xtools xmirror yazi qemu-user-static rclone"
+
+echo "Aktualizace po první instalaci"
+sleep 2
+sudo xbps-install -Syu
+
+echo "Spouštím instalaci balíčků pro Void Xfce4"
+echo "Nedělat nic ...... Ctrl C"
+sleep 7
+sudo xbps-install -S $MyApps
+echo "Instalace kompletní"
+sleep 5
+
+# END OF FILE #
+

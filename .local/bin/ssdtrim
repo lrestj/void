@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+sudo fstrim /
+notify-send "Provádím periodic trim ssd"
+echo "Trifsm proveden   $(date)" >> /home/libor/Trimfs_log

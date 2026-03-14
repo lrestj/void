@@ -1,0 +1,16 @@
+#!/bin/bash
+
+a="Okno nebo výběr"
+b="Celá plocha"
+ai="\0icon\x1fgnome-screenshot"
+bi="\0icon\x1fgnome-screenshot-symbolic"
+
+selected=$(echo -e "c\t$a$ai\no\t$b$bi" | fuzzel --with-nth 2 --accept-nth 2 --match-nth 1 --auto-select --config ~/.config/fuzzel/screenshot.ini -d )
+case $selected in
+    "$a")
+        sleep 0.2 && grimshot --notify save anything;;
+    "$b")
+        sleep 0.2 && grimshot --notify save output;;
+       *)
+        notify-send -t 1200 -i dialog-warning "Přerušeno uživatelem"
+esac

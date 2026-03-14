@@ -1,0 +1,17 @@
+run: /var/service/agetty-tty1: (pid 796) 921s
+run: /var/service/agetty-tty2: (pid 777) 921s
+run: /var/service/agetty-tty3: (pid 814) 921s
+run: /var/service/agetty-tty4: (pid 807) 921s
+run: /var/service/autofs: (pid 797) 921s; run: log: (pid 795) 921s
+run: /var/service/chronyd: (pid 789) 921s; run: log: (pid 781) 921s
+run: /var/service/cupsd: (pid 803) 921s; run: log: (pid 801) 921s
+run: /var/service/dbus: (pid 800) 921s; run: log: (pid 799) 921s
+run: /var/service/lightdm: (pid 806) 921s; run: log: (pid 805) 921s
+run: /var/service/NetworkManager: (pid 786) 921s; run: log: (pid 783) 921s
+run: /var/service/polkitd: (pid 819) 921s; run: log: (pid 818) 921s
+run: /var/service/rpcbind: (pid 810) 921s; run: log: (pid 809) 921s
+run: /var/service/snooze-daily: (pid 811) 921s
+run: /var/service/snooze-weekly: (pid 791) 921s
+run: /var/service/sshd: (pid 784) 921s; run: log: (pid 780) 921s
+run: /var/service/udevd: (pid 775) 921s; run: log: (pid 774) 921s
+run: /var/service/ufw: (pid 822) 920s; run: log: (pid 821) 920s
