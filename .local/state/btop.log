@@ -291,3 +291,7 @@ btop++ needs an interactive shell to run.
 2026/03/15 (12:53:06) | ===> btop++ v.1.4.6
 2026/03/15 (12:53:06) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
 2026/03/15 (12:53:06) | WARNING: Intel GPU: Failed to initialize PMU
+
+2026/03/15 (20:07:01) | ===> btop++ v.1.4.6
+2026/03/15 (20:07:01) | WARNING: NVML: Failed to get maximum GPU power draw, defaulting to 225W: Not Supported
+2026/03/15 (20:07:01) | WARNING: Intel GPU: Failed to initialize PMU

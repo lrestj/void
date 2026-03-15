@@ -312,4 +312,17 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///nfs/Nas/Libor/Linux/02%20Void/Debug%20service.jpg" added="2026-03-15T18:26:08.062532Z" modified="2026-03-15T18:26:08.062536Z" visited="2026-03-15T18:26:08.062532Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="ristretto" exec="&apos;ristretto %u&apos;" modified="2026-03-15T18:26:08.062534Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>
