@@ -51,6 +51,8 @@
     <property name="plugin-6" type="string" value="systray">
       <property name="square-icons" type="bool" value="true"/>
       <property name="known-legacy-items" type="array">
+        <value type="string" value="uget-gtk"/>
+        <value type="string" value="applet networkmanager"/>
         <value type="string" value="žádá se o síťovou adresu k síti wi-fi pro „roxynet 5g“…"/>
         <value type="string" value="nastavuje se připojení k síti wi-fi „roxynet 5g“…"/>
         <value type="string" value="redshift-gtk"/>
@@ -84,16 +86,13 @@
       <property name="show-button-title" type="bool" value="true"/>
       <property name="button-title" type="string" value=" Menu  "/>
       <property name="recent" type="array">
-        <value type="string" value="Alacritty.desktop"/>
         <value type="string" value="xfce-keyboard-settings.desktop"/>
-        <value type="string" value="xfce-session-settings.desktop"/>
         <value type="string" value="xfce4-mime-settings.desktop"/>
-        <value type="string" value="vivaldi-snapshot.desktop"/>
-        <value type="string" value="vivaldi-stable.desktop"/>
+        <value type="string" value="Alacritty.desktop"/>
+        <value type="string" value="xfce-session-settings.desktop"/>
         <value type="string" value="xfce-settings-manager.desktop"/>
         <value type="string" value="gparted.desktop"/>
         <value type="string" value="xfce4-notifyd-config.desktop"/>
-        <value type="string" value="redshift-gtk.desktop"/>
       </property>
       <property name="menu-width" type="int" value="626"/>
       <property name="default-category" type="int" value="1"/>
@@ -135,7 +134,7 @@
     </property>
     <property name="plugin-1" type="string" value="launcher">
       <property name="items" type="array">
-        <value type="string" value="17732596141.desktop"/>
+        <value type="string" value="17736782301.desktop"/>
       </property>
     </property>
   </property>

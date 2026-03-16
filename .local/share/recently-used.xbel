@@ -325,4 +325,54 @@
       </metadata>
     </info>
   </bookmark>
+  <bookmark href="file:///home/libor/.local/bin/addnew" added="2026-03-16T10:20:15.354365Z" modified="2026-03-16T10:20:15.354374Z" visited="2026-03-16T10:20:15.354366Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="vivaldi-stable" exec="&apos;vivaldi-stable %u&apos;" modified="2026-03-16T10:20:15.354370Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///nfs/FilmyNas/Scarpetta/Scarpettov%C3%A1%20S01E01%20(Scarpetta%202026)%201080p%20CZ%20EN.mkv" added="2026-03-16T10:30:08.018144Z" modified="2026-03-16T10:30:08.018158Z" visited="2026-03-16T10:30:08.018146Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/x-matroska"/>
+        <bookmark:applications>
+          <bookmark:application name="vivaldi-stable" exec="&apos;vivaldi-stable %u&apos;" modified="2026-03-16T10:30:08.018151Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///nfs/FilmyNas/Scarpetta/Scarpettov%C3%A1%20S01E03%20(Scarpetta%202026)%201080p%20CZ%20EN.mkv" added="2026-03-16T10:36:03.843554Z" modified="2026-03-16T10:36:03.843575Z" visited="2026-03-16T10:36:03.843556Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/x-matroska"/>
+        <bookmark:applications>
+          <bookmark:application name="vivaldi-stable" exec="&apos;vivaldi-stable %u&apos;" modified="2026-03-16T10:36:03.843563Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///nfs/FilmyNas/Scarpetta" added="2026-03-16T11:04:09.708220Z" modified="2026-03-16T11:04:09.708226Z" visited="2026-03-16T11:04:09.708221Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="uget-gtk" exec="&apos;uget-gtk %u&apos;" modified="2026-03-16T11:04:09.708222Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/libor/Sta%C5%BEen%C3%A9/Gump-2021-CZ.mkv" added="2026-03-16T13:57:27.933648Z" modified="2026-03-16T13:57:27.933662Z" visited="2026-03-16T13:57:27.933649Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/x-matroska"/>
+        <bookmark:applications>
+          <bookmark:application name="vivaldi-stable" exec="&apos;vivaldi-stable %u&apos;" modified="2026-03-16T13:57:27.933655Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
 </xbel>

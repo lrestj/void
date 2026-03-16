@@ -1,0 +1,16 @@
+#!/bin/bash
+
+sel=$(rofi -dmenu -l 2 -p 'Jméno souboru:  ')
+file=~/.local/bin/$sel
+
+case $sel in
+    "")
+        notify-send -i im-kick-user "Nezadali jste jméno" "Konec bez vytvoření souboru"
+    ;;
+    *)
+        touch $file
+        chmod +x $file
+        echo "#!/bin/bash" > $file
+        $TERMINAL -e vim $file
+    ;;
+esac
