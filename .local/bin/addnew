@@ -11,6 +11,6 @@ case $sel in
         touch $file
         chmod +x $file
         echo "#!/bin/bash" > $file
-        $TERMINAL -e vim $file
+        vim $file
     ;;
 esac
