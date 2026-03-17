@@ -86,9 +86,10 @@
       <property name="show-button-title" type="bool" value="true"/>
       <property name="button-title" type="string" value=" Menu  "/>
       <property name="recent" type="array">
-        <value type="string" value="xfce-settings-manager.desktop"/>
         <value type="string" value="xfce-keyboard-settings.desktop"/>
+        <value type="string" value="rofi.desktop"/>
         <value type="string" value="xfce4-mime-settings.desktop"/>
+        <value type="string" value="xfce-settings-manager.desktop"/>
         <value type="string" value="Alacritty.desktop"/>
         <value type="string" value="xfce-session-settings.desktop"/>
         <value type="string" value="gparted.desktop"/>

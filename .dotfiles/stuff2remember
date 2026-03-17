@@ -1,0 +1,3 @@
+In a custom user script or dmenu mode, it is possible to produce entry icons using XDG thumbnailers by adding the prefix thumbnail:// to the filename specified after \0icon\x1f, for example:
+
+echo -en "EntryName\0icon\x1fthumbnail://path/to/file\n" | rofi -dmenu -show-icons

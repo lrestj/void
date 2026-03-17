@@ -1,6 +1,6 @@
 configuration {
-    font: "mono 13";
-    modes: "drun,run,ssh";
+    font: "mono 14";
+    modes: "drun,run";
     drun {
         display-name: "Aplikace";
     }
@@ -171,4 +171,8 @@ configuration {
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
 
- @theme "./libor.rasi"
+// @theme "./libor.rasi"
+
+//@theme "/usr/share/rofi/themes/material.rasi"
+
+@theme "/home/libor/.local/share/rofi/themes/materialcustom.rasi"

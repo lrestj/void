@@ -1,0 +1,46 @@
+#!/bin/bash
+
+a=" Vimrc"
+b="Yazi.toml"
+c="Waybar config"
+d="Mako config"
+e="Sway config"
+f="Stuff2remember"
+g="Configuration.nix"
+h="Flake.nix"
+i="Pkgs"
+j="Add new script"
+ai="\0icon\x1fvim"
+bi="\0icon\x1fsystem-file-manager"
+ci="\0icon\x1fwayland"
+di="\0icon\x1fnotion"
+ei="\0icon\x1fdesktop-effects"
+fi="\0icon\x1fnotepad"
+gi="\0icon\x1fpreferences-system-services"
+hi="\0icon\x1fpreferences-system-services"
+ii="\0icon\x1fpreferences-system-services"
+ji="\0icon\x1fadd"
+
+selected=$(echo -e "$e\n$a\n$b\n$c\n$d\n$f\n$g\n$h\n$i\n$j" | rofi -dmenu)
+case $selected in
+    "$a")
+        vim ~/nixos/.config/vim/vimrc;;
+    "$b")
+        vim ~/nixos/.config/yazi/keymap.toml;;
+    "$c")
+        vim ~/nixos/.config/waybar/config-sway.jsonc;;
+    "$d")
+        vim ~/nixos/.config/mako/config;;
+    "$e")
+        vim ~/nixos/.config/sway/config;;
+    "$f")
+        vim ~/nixos/.dotfiles/other/stuff2remember.txt;;
+    "$g")
+        vim ~/nixos/.dotfiles/nixos/hosts/zbook/configuration.nix;;
+    "$h")
+        vim ~/nixos/.dotfiles/nixos/flake.nix;;
+    "$i")
+        vim ~/nixos/.dotfiles/nixos/modules/pkgs.nix;;
+    "$j")
+        addnew
+esac

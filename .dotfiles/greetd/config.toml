@@ -1,0 +1,17 @@
+# /etc/greetd/config.toml
+# Might be needed: ADDUSER greeter && usermod -aG video greeter
+
+[terminal]
+vt = 7
+
+[initial_session]
+command = "startxfce4"
+user = "libor"
+
+[default_session]
+# The command to start tuigreet
+command = "tuigreet --greeting 'Vítejte ve VoidLinux' --asterisks --time --time-format %c --remember --remember-session --power-reboot 'loginctl reboot' --power-shutdown 'loginctl poweroff' --cmd startxfce4"
+# The user that runs the greeter
+user = "greeter"
+
+
