@@ -175,4 +175,6 @@ configuration {
 
 //@theme "/usr/share/rofi/themes/material.rasi"
 
-@theme "/home/libor/.local/share/rofi/themes/materialcustom.rasi"
+//@theme "/home/libor/.local/share/rofi/themes/materialcustom.rasi"
+
+@theme "/home/libor/.local/share/rofi/themes/Rofi_Libor_Theme.rasi"

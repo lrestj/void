@@ -16,13 +16,13 @@
 	base04: #B2CCD6;
 	base05: #EEFFFF;
 	base06: #EEFFFF;
-	base07: #FFFFFF;
+	base07: #AABBCC;
 	base08: #F07178;
 	base09: #F78C6C;
 	base0A: #FFCB6B;
 	base0B: #C3E88D;
 	base0C: #89DDFF;
-	base0D: #82AAFF;
+	base0D: #64727b;
 	base0E: #C792EA;
 	base0F: #FF5370;
 
@@ -36,7 +36,7 @@
 window {
         width: 33%;
 	transparency: "real";
-	background-color: #263238FF; /*base00 + CC (80% opacity)*/
+	background-color: #263238DD; /*base00 + CC (80% opacity)*/
 }
 
 mainbox {
@@ -84,13 +84,14 @@ button, textbox {
 
 button selected {
 	background-color: @base0D;
+        text-color: #FFFFFF;
 }
 
 listview {
         lines: 11;
         columns: 1;
 	scrollbar: true;
-	margin: 0 10px 0 30px;
+	margin: 0 10px 0 10px;
 }
 
 scrollbar {
@@ -124,20 +125,24 @@ element normal {
 
 element selected {
 	background-color: @base0D;
+        text-color: #FFFFFF;
 }
 
 element alternate {
 	/*background-color: @base03;*/
 }
 
-element normal normal, element selected normal, element alternate normal {
+element normal normal, element alternate normal {
 	text-color: @base07;
 }
 
-element normal urgent, element selected urgent, element alternate urgent {
+element normal urgent, element alternate urgent {
 	text-color: @base0F;
 }
 
-element normal active, element selected active, element alternate active {
+element normal active, element alternate active {
 	text-color: @base0B;
+}
+element selected normal, element selected active, element selectef urgent {
+	text-color: #FFFFFF;
 }
