@@ -4,42 +4,52 @@ PacmanApps="font-manager cliphist evince foot fuzzel gvfs glxinfo galculator gre
 
 AurApps="autofs bemoji bibata-cursor-theme waypaper" 
 
-echo "Spouštím instalaci, můžete zrušit CTRL+C ..."
+echo "##################################################"
+echo "#  Spouštím instalaci, můžete zrušit CTRL+C ...  #"
+echo "##################################################"
 sleep 4
 sudo pacman -Syu
-echo "Instalace z repozitáře Arch"
+echo
+echo "#################################"
+echo "#  Instalace z repozitáře Arch  #"
+echo "#################################"
 sudo pacman -S $PacmanApps &&
-echo "Instalace z repozitáře Aur"
-yay -S $AurApps &&
-echo "Instalace dokončena"
-sleep 4
 
-# Clone repo
-echo "Kopíruji konfiguraci z repozitáře"
+echo
+echo "################################"
+echo "#  Instalace z repozitáře Aur  #"
+echo "################################"
+yay -S $AurApps &&
+
+echo
+echo "#######################################"
+echo "#  Kopíruji konfiguraci z repozitáře  #"
+echo "#######################################"
 git clone --bare -b endeavourOS --single-branch https://github.com/lrestj/probook.git $HOME/.cfg.git &&
 git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f
-echo "Konfigurace z repozitáře kompletní"
 echo -e "\n"
 sleep 4
 
-echo "Nastavení swap"
+echo "####################"
+echo "#  Nastavení swap  #"
+echo "####################"
 echo vm.swappiness=10 | sudo tee /etc/sysctl.d/99-swappiness.conf
 echo -e "\n"
 
-#NFS mounts
-echo "Synology nfs shares"
+echo "#########################"
+echo "#  Synology nfs shares  #"
+echo "#########################"
 echo -e "\n"
 sudo mkdir /nfs &&
 sudo chmod -R ugo+rwx /nfs
-sudo cp -f /home/libor/.dotfiles/other/etc/autofs/* /etc/autofs/
+sudo cp -f /home/libor/.dotfiles/autofs/* /etc/autofs/
 sudo systemctl enable autofs.service
-echo -e "\n"
-echo "Připojení Nas Synology proběhlo úspěšně"
-echo -e "\n"
 sleep 4
 
-#Greetd greeter
-echo "Nastavuji Greetd"
+echo
+echo "######################"
+echo "#  Nastavuji Greetd  #"
+echo "######################"
 sudo cp -f ~/.dotfiles/greetd/* /etc/greetd/
 sudo systemctl enable greetd.service
 
@@ -50,6 +60,10 @@ sudo systemctl enable greetd.service
 
 mkdir -p Public Templates Stažené Dokumenty Hudba Videa
 
+echo
+echo "################################"
+echo "#  Konfigurace Git repozitářů  #"
+echo "################################"
 git clone https://github.com/lrestj/install $HOME/.dotfiles/install/
 cd $HOME/.dotfiles/install/
 git remote remove origin
@@ -58,22 +72,22 @@ git remote add gitlab git@gitlab.com:lrestj/install.git
 git config --global user.email "rest@seznam.cz"
 git config --global user.name "LrestJ"
 
-
-#Git remote repos
-echo "Konfigurace Git repozitářů"
 git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote remove origin
 git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add github git@github.com:lrestj/probook.git
 git --git-dir=/home/libor/.cfg.git/ --work-tree=/home/libor remote add gitlab git@gitlab.com:lrestj/probook.git
 git config --global user.email "rest@seznam.cz"
 git config --global user.name "LrestJ"
-echo "Remote repos added"
-echo -e "\n"
-sleep 4
 
-#$PATH
-echo "Add $HOME/.local/bin to $PATH"
-sleep 4
+echo
+echo "###################################"
+echo "#  Add $HOME/.local/bin to $PATH  #"
+echo "###################################"
+sleep 3
 EDITOR=vim sudoedit /etc/profile
-echo "KONEC INSTALACE" 
+
+echo
+echo "#####################"
+echo "#  KONEC INSTALACE  #" 
+echo "#####################"
 
 ##### END OF FILE #####
