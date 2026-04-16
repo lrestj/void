@@ -96,11 +96,11 @@ sudo ln -s /usr/share/examples/wireplumber/10-wireplumber.conf /etc/pipewire/pip
 sudo mkdir -p /etc/pipewire/pipewire.conf.d
 sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pipewire.conf.d/
 
-sudo useradd -M -G video greeter
-sudo mkdir /var/cache/tuigreet
-sudo chown greeter:greeter /var/cache/tuigreet
-sudo chmod 0755 /var/cache/tuigreet
-sudo cp -rfv $HOME/.dotfiles/greetd /etc/
+# sudo useradd -M -G video greeter
+# sudo mkdir /var/cache/tuigreet
+# sudo chown greeter:greeter /var/cache/tuigreet
+# sudo chmod 0755 /var/cache/tuigreet
+# sudo cp -rfv $HOME/.dotfiles/greetd /etc/
 
 sudo cp -rfv $HOME/.dotfiles/autofs /etc/
 sudo cp -rfv $HOME/.dotfiles/environment /etc/
@@ -114,7 +114,7 @@ sudo ln -s /etc/sv/snooze-weekly /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
 sudo ln -s /etc/sv/chronyd /var/service/
-sudo ln -s /etc/sv/greetd /var/service/
+# sudo ln -s /etc/sv/greetd /var/service/
 
 mkdir Dokumenty Videa Hudba Stažené Templates
 
