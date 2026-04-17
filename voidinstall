@@ -103,8 +103,8 @@ sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pip
 # sudo cp -rfv $HOME/.dotfiles/greetd /etc/
 
 sudo cp -rfv $HOME/.dotfiles/autofs /etc/
-sudo cp -rfv $HOME/.dotfiles/environment /etc/
-sudo cp -rfv $HOME/.dotfiles/profile /etc/
+# sudo cp -rfv $HOME/.dotfiles/environment /etc/
+# sudo cp -rfv $HOME/.dotfiles/profile /etc/
 sudo ln -s /etc/sv/ufw /var/service/
 sudo ln -s /etc/sv/autofs /var/service/
 sudo ln -s /etc/sv/NetworkManager /var/service/
