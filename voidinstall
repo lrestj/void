@@ -101,10 +101,10 @@ sudo ln -s /usr/share/examples/pipewire/20-pipewire-pulse.conf /etc/pipewire/pip
 # sudo chown greeter:greeter /var/cache/tuigreet
 # sudo chmod 0755 /var/cache/tuigreet
 # sudo cp -rfv $HOME/.dotfiles/greetd /etc/
+# sudo ln -s /etc/sv/greetd /var/service/
+# sudo sv down greetd
 
 sudo cp -rfv $HOME/.dotfiles/autofs /etc/
-# sudo cp -rfv $HOME/.dotfiles/environment /etc/
-# sudo cp -rfv $HOME/.dotfiles/profile /etc/
 sudo ln -s /etc/sv/ufw /var/service/
 sudo ln -s /etc/sv/autofs /var/service/
 sudo ln -s /etc/sv/NetworkManager /var/service/
@@ -115,7 +115,6 @@ sudo ln -s /etc/sv/snooze-weekly /var/service/
 sudo ln -s /etc/sv/cupsd /var/service/
 sudo ln -s /etc/sv/dbus /var/service/
 sudo ln -s /etc/sv/chronyd /var/service/
-# sudo ln -s /etc/sv/greetd /var/service/
 
 # Fstrim
 sudo mkdir -p /etc/cron.weekly
