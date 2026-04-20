@@ -1,0 +1,72 @@
+#!/bin/bash
+
+echo ####################
+echo #  Instalace Niri  #
+echo ####################
+
+sudo apt install git libxcb-cursor-dev rustup gcc clang \
+    libudev-dev libgbm-dev libxkbcommon-dev libegl1-mesa-dev \
+    libwayland-dev libinput-dev libdbus-1-dev libsystemd-dev \
+    libseat-dev libpipewire-0.3-dev libpango1.0-dev libdisplay-info-dev
+
+rustup default stable
+cargo install cargo-deb
+
+git clone https://github.com/YaLTeR/niri.git
+cd niri
+cargo deb
+
+sudo apt install ./target/debian/*.deb
+
+git clone https://github.com/Supreeeme/xwayland-satellite.git
+cd xwayland-satellite
+cargo deb
+sudo apt install ./target/debian/*.deb
+
+echo
+echo ######################
+echo # Instalace balíčků  #
+echo ######################
+sudo apt install btop cliphist dunst fastfetch fish fonts-jetbrains-mono foot fzf galculator gawk geany git gvfs jq libxcb-cursor-dev libxkbcommon-dev nemo network-manager-applet nfs-common pamixer papirus-icon-theme pavucontrol power-profiles-daemon qutebrowser resvg swaybg swayidle swaylock udiskie udisks2 waybar wget wireplumber wl-clipboard
+
+mkdir Dokumenty Videa Hudba Stažené Templates
+
+echo    
+echo ###############
+echo #  Autologin  #
+echo ###############
+git clone --bare -b debian --single-branch https://github.com/lrestj/probook $HOME/.cfg.git
+git --git-dir=$HOME/.cfg.git --work-tree=$HOME checkout -f
+sudo cp -rf $HOME/.dotfiles/getty@tty1.service.d /etc/systemd/system/
+
+echo
+echo ###########################
+echo #  Nfs Synology settings  #
+echo ###########################
+sudo cp -v /etc/fstab /etc/fstab.bak
+sudo cat $HOME/.dotfiles/nfs2fstab.txt >> /etc/fstab
+
+echo
+echo #############################
+echo #  Github & gitlab remotes  #
+echo #############################
+git config --global user.email "rest@seznam.cz"
+git config --global user.name "LrestJ"
+git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
+git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/probook.git
+git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/probook.git
+git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
+
+git clone https://github.com/lrestj/install $HOME/.dotfiles/install/
+cd $HOME/.dotfiles/install/
+git config --global user.email "rest@seznam.cz"
+git config --global user.name "LrestJ"
+git remote remove origin
+git remote add github git@github.com:lrestj/install.git
+git remote add gitlab git@gitlab.com:lrestj/install.git
+git remote -v
+
+echo
+echo #####################
+echo #  Konec instalace  #
+echo #####################
