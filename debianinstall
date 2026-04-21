@@ -67,6 +67,18 @@ git remote add gitlab git@gitlab.com:lrestj/install.git
 git remote -v
 
 echo
+echo "###################"
+echo "#  Instalace Vim  #"
+echo "###################"
+vimcomp
+
+echo
+echo "######################"
+echo "#  Instalace Fuzzel  #"
+echo "######################"
+fuzzelcomp
+
+echo
 echo "#####################"
 echo "#  Konec instalace  #"
 echo "#####################"
