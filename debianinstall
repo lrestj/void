@@ -1,13 +1,15 @@
 #!/bin/bash
 
+set -e
+
 echo "####################"
 echo "#  Instalace Niri  #"
 echo "####################"
 sleep 2
 
 mkdir -p $HOME/.local/src
-cd $HOME/local/src
-sudo apt install git libxcb-cursor-dev rustup gcc clang \
+cd $HOME/.local/src
+sudo apt -y install git libxcb-cursor-dev rustup gcc clang \
     libudev-dev libgbm-dev libxkbcommon-dev libegl1-mesa-dev \
     libwayland-dev libinput-dev libdbus-1-dev libsystemd-dev \
     libseat-dev libpipewire-0.3-dev libpango1.0-dev libdisplay-info-dev
@@ -18,19 +20,19 @@ cargo install cargo-deb
 git clone https://github.com/YaLTeR/niri.git
 cd niri
 cargo deb
-sudo apt install -y ./target/debian/*.deb
+sudo apt -y install ./target/debian/*.deb
 
 git clone https://github.com/Supreeeme/xwayland-satellite.git
 cd xwayland-satellite
 cargo deb
-sudo apt install -y ./target/debian/*.deb
+sudo apt -y install ./target/debian/*.deb
 
 echo
 echo "######################"
 echo "# Instalace balíčků  #"
 echo "######################"
 sleep 2
-sudo apt install -y btop brightnessctl cliphist dunst fastfetch fish ffmpeg fd-find ripgrep zoxide imagemagick fonts-jetbrains-mono font-manager foot fzf galculator gawk geany git gvfs hplip-gui jq libnotify-bin libreoffice libreoffice-gtk3 libreoffice-l10n-cs libxcb-cursor-dev libxkbcommon-dev lxqt-policykit nemo network-manager-applet nfs-common  nwg-look pamixer papirus-icon-theme pavucontrol power-profiles-daemon qt6ct qutebrowser resvg scdoc simple-scan swaybg swayidle swaylock udiskie udisks2 waybar wget wireplumber wl-clipboard wlsunset zenity
+sudo apt -y install btop brightnessctl cliphist dunst fastfetch fish ffmpeg fd-find ripgrep zoxide imagemagick fonts-jetbrains-mono font-manager foot fzf galculator gawk geany git gvfs hplip-gui jq libnotify-bin libreoffice libreoffice-gtk3 libreoffice-l10n-cs libxcb-cursor-dev libxkbcommon-dev lxqt-policykit nemo network-manager-applet nfs-common  nwg-look pamixer papirus-icon-theme pavucontrol power-profiles-daemon qt6ct qutebrowser resvg scdoc simple-scan swaybg swayidle swaylock udiskie udisks2 waybar wget wireplumber wl-clipboard wlsunset zenity
 
 cd $HOME
 mkdir Dokumenty Videa Hudba Stažené Templates
@@ -48,13 +50,13 @@ echo "###########################"
 echo "#  Nfs Synology settings  #"
 echo "###########################"
 sudo cp -v /etc/fstab /etc/fstab.bak
-cat $HOME/.dotfiles/nfs2fstab.txt | sudo tee -a /etc/fstab.bak >> /dev/null
+cat $HOME/.dotfiles/nfs2fstab.txt | sudo tee -a /etc/fstab >> /dev/null
 
 echo
 echo "###################"
 echo "#  Grub settings  #"
 echo "###################"
-sudo sed -i '5i/home/libor/.dotfiles/grubhyperfluent/theme.txt' /etc/default/grub
+sudo sed -i '11iGRUB_THEME=/home/libor/.dotfiles/grubhyperfluent/theme.txt' /etc/default/grub
 sudo update-grub
 
 echo
