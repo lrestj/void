@@ -46,7 +46,14 @@ echo "###########################"
 echo "#  Nfs Synology settings  #"
 echo "###########################"
 sudo cp -v /etc/fstab /etc/fstab.bak
-sudo cat $HOME/.dotfiles/nfs2fstab.txt >> /etc/fstab
+sudo sudo cat $HOME/.dotfiles/nfs2fstab.txt >> /etc/fstab
+
+echo
+echo "###################"
+echo "#  Grub settings  #"
+echo "###################"
+sudo sed -i '5i/home/libor/.dotfiles/grubhyperfluent/theme.txt' /etc/default/grub
+sudo update-grub
 
 echo
 echo "#############################"
@@ -73,12 +80,6 @@ echo "###################"
 echo "#  Instalace Vim  #"
 echo "###################"
 exec $HOME/.local/bin/vimcompile
-
-echo
-echo "######################"
-echo "#  Instalace Fuzzel  #"
-echo "######################"
-exec $HOME/.local/bin/fuzzelcompile
 
 echo
 echo "#####################"
