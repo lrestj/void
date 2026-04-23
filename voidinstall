@@ -132,6 +132,15 @@ git remote add gitlab git@gitlab.com:lrestj/install.git
 git remote -v
 
 echo
+echo "###################"
+echo "#                 #"
+echo "#  Grub settings  #"
+echo "#                 #"
+echo "###################"
+sudo sed -i '11iGRUB_THEME=/home/libor/.dotfiles/voidGrubTheme/theme.txt' /etc/default/grub
+sudo update-grub
+
+echo
 echo "#########################"
 echo "#                       #" 
 echo "#  Dokončení instalace  #" 
