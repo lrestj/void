@@ -81,9 +81,11 @@ git remote add gitlab git@gitlab.com:lrestj/install.git
 git remote -v
 
 echo
-echo "###################"
-echo "#  Instalace Vim  #"
-echo "###################"
-exec $HOME/.local/bin/vimcompile
+echo "#################################"
+echo "#  Instalace balíčků ze zdroje  #"
+echo "#################################"
+echo
+sleep 2
+bash $HOME/.local/bin/pkgsbuild
 
 ###  END OF FILE  ###
