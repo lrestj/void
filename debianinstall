@@ -69,6 +69,7 @@ while true; do
                # sudo xbps-install -S nvidia
                git clone --bare -b debian --single-branch https://github.com/lrestj/zbook.git $HOME/.cfg.git
                git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
+               bash $HOME/.local/bin/bravedeb
                echo
                echo "###################################"
                echo "#  Konfigurace git repozitáře...  #"
