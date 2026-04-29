@@ -13,7 +13,23 @@ sudo xbps-install -S void-repo-nonfree  &&
 sudo xbps-install -S intel-ucode
 
 # Installing pkgs
-sudo xbps-install -S 7zip nemo nemo-fileroller Waybar alsa-pipewire autofs baobab brave-browser breeze-icons brightnessctl btop chrony cliphist cryptsetup dconf-editor dialog elogind evince exfatprogs fastfetch fd file-roller fish-shell fontmanager foot fuzzel fzf galculator geany glxinfo gparted grimshot gufw gvfs ncurses-devel hplip-gui hunspell-cs hunspell-en imagewriter intel-video-accel jq libreoffice-calc libreoffice-writer libreoffice-i18n-cs libreoffice-gnome libva-utils linux-headers lvm2 mako mdadm mesa-intel-dri mpv network-manager-applet nfs-utils niri noto-fonts-ttf noto-fonts-emoji nwg-look pamixer papirus-icon-theme pavucontrol pipewire power-profiles-daemon qt5-wayland qt6-wayland qt6ct qutebrowser qytdl resvg ristretto simple-scan snooze swayidle swaylock tmux tumbler udiskie unzip vlc void-docs-browse void-live-audio wlsunset xdg-desktop-portal-gtk xdg-desktop-portal-gnome xdg-user-dirs xfce-polkit xhost xmirror xournalpp xtools xwayland-satellite xz yazi zenity zip
+sudo xbps-install -S \
+7zip alsa-pipewire autofs baobab brave-browser breeze-icons brightnessctl btop \
+chrony cliphist cryptsetup dconf-editor dialog elogind evince exfatprogs \
+fastfetch fd file-roller fish-shell fontmanager foot fuzzel fzf \
+galculator geany glxinfo gparted grimshot gufw gvfs \
+hplip-gui hunspell-cs hunspell-en imagewriter intel-video-accel \
+jq libreoffice-calc libreoffice-gnome libreoffice-i18n-cs libreoffice-writer \
+libva-utils linux-headers lvm2 mako mdadm mesa-intel-dri mpv \
+ncurses-devel nemo nemo-fileroller network-manager-applet nfs-utils \
+niri noto-fonts-emoji noto-fonts-ttf nwg-look \
+pamixer papirus-icon-theme pavucontrol pipewire power-profiles-daemon \
+qt5-wayland qt6-wayland qt6ct qutebrowser qytdl resvg ristretto \
+simple-scan snooze swayidle swaylock tmux tumbler \
+udiskie unzip vlc void-docs-browse void-live-audio \
+waybar wlsunset xdg-desktop-portal-gnome \
+xdg-desktop-portal-gtk xdg-user-dirs xfce-polkit xhost xmirror \
+xournalpp xtools xwayland-satellite xz yazi zenity zip
 
 echo
 echo "##################################"
@@ -33,7 +49,7 @@ while true; do
                echo "#                                  #"
                echo "####################################"
                sudo xbps-install -S nvidia
-               git clone --bare -b voidniri --single-branch https://github.com/lrestj/zbook.git $HOME/.cfg.git
+               git clone --bare -b voidniri https://github.com/lrestj/zbook.git $HOME/.cfg.git
                git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
                echo
                echo "###################################"
@@ -52,7 +68,7 @@ while true; do
                echo "#  Probíhá konfigurace Probook...    #"
                echo "#                                    #"
                echo "######################################"
-               git clone --bare -b voidniri --single-branch https://github.com/lrestj/probook.git $HOME/.cfg.git
+               git clone --bare -b voidniri https://github.com/lrestj/probook.git $HOME/.cfg.git
                git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
                echo
                echo "###################################"
@@ -71,7 +87,7 @@ while true; do
                echo "#  Probíhá konfigurace Mirantb...    #"
                echo "#                                    #"
                echo "######################################"
-               git clone --bare -b voidniri --single-branch https://github.com/lrestj/probook.git $HOME/.cfg.git
+               git clone --bare -b voidniri https://github.com/lrestj/probook.git $HOME/.cfg.git
                git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
                echo
                echo "###################################"
@@ -137,7 +153,7 @@ echo "#                 #"
 echo "#  Grub settings  #"
 echo "#                 #"
 echo "###################"
-sudo sed -i '11iGRUB_THEME=/home/libor/.dotfiles/voidGrubTheme/theme.txt' /etc/default/grub
+sudo sed -i '11iGRUB_THEME=/home/libor/.dotfiles/TelaGrubTheme/theme.txt' /etc/default/grub
 sudo update-grub
 
 echo
