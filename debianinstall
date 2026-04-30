@@ -162,5 +162,6 @@ echo "#################################"
 echo
 sleep 1
 bash $HOME/.local/bin/pkgsbuild
+sudo apt remove ifupdown && sudo rm -r /etc/network/
 
 ###  END OF FILE  ###
