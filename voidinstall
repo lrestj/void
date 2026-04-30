@@ -26,7 +26,7 @@ niri noto-fonts-emoji noto-fonts-ttf nwg-look \
 pamixer papirus-icon-theme pavucontrol pipewire power-profiles-daemon \
 qt5-wayland qt6-wayland qt6ct qutebrowser qytdl resvg ristretto \
 simple-scan snooze swayidle swaylock tmux tumbler \
-udiskie unzip vlc void-docs-browse void-live-audio \
+udiskie unzip vim vlc void-docs-browse void-live-audio \
 Waybar wlsunset xdg-desktop-portal-gnome \
 xdg-desktop-portal-gtk xdg-user-dirs xfce-polkit xhost xmirror \
 xournalpp xtools xwayland-satellite xz yazi zenity zip
