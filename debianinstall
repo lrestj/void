@@ -23,6 +23,7 @@ cd niri
 cargo deb
 sudo apt -y install ./target/debian/*.deb
 
+cd ..
 git clone https://github.com/Supreeeme/xwayland-satellite.git
 cd xwayland-satellite
 cargo deb
