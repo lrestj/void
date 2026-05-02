@@ -1,5 +1,47 @@
 #!/bin/bash
 
+echo
+echo "##################################"
+echo "#  Na jaký počítač instalujete?  #"
+echo "#  Zbook = 1                     #"
+echo "#  Probook = 2                   #"
+echo "#  Mirantb = 3                   #"
+echo "##################################"
+
+while true; do
+    read -r -n 1 -p " Vyberte 1/2/3: " answer
+    case $answer in
+        [1]* ) echo
+               echo "####################################"
+               echo "#                                  #"
+               echo "#  Zvolili jste Zbook...           #"
+               echo "#                                  #"
+               echo "####################################"
+               echo
+               sleep 4 
+               break;;
+        [2]* ) echo
+               echo "######################################"
+               echo "#                                    #"
+               echo "#  Zvolili jste Probook...           #"
+               echo "#                                    #"
+               echo "######################################"
+               echo
+               sleep 4 
+               break;;
+        [3]* ) echo
+               echo "######################################"
+               echo "#                                    #"
+               echo "#  Zvolili jste Mirantb...           #"
+               echo "#                                    #"
+               echo "######################################"
+               echo
+               sleep 4
+               break;;
+         * ) echo "Vyberte 1, 2, nebo 3";;
+     esac
+done
+
 PacmanApps="font-manager cinnamon-translations cliphist evince foot fuzzel gvfs glxinfo galculator greetd greetd-tuigreet galculator jq network-manager-applet xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk udiskie simple-scan breeze mako ttf-nerd-fonts-symbols ttf-hack-nerd awesome-terminal-fonts yazi fish waybar lxqt-policykit wlsunset geany grim libreoffice-fresh-cs qt6ct brightnessctl btop fastfetch papirus-icon-theme qutebrowser gparted mpv nemo vlc pamixer pdfarranger rclone qjackctl niri swaybg swayidle swaylock xournalpp zip p7zip wlsunset kitty kwalletmanager kwallet-pam nwg-look xorg-xwayland wayland-protocols 
 
 AurApps="autofs bemoji bibata-cursor-theme waypaper" 
@@ -21,16 +63,7 @@ echo "#  Instalace z repozitáře Aur  #"
 echo "################################"
 yay -S $AurApps &&
 
-echo
-echo "##################################"
-echo "#  Na jaký počítač instalujete?  #"
-echo "#  Zbook = 1                     #"
-echo "#  Probook = 2                   #"
-echo "#  Mirantb = 3                   #"
-echo "##################################"
-
 while true; do
-    read -r -p " Vyberte 1/2/3: " answer
     case $answer in
         [1]* ) echo
                echo "####################################"
