@@ -2,6 +2,49 @@
 
 set -e
 
+echo
+echo "##################################"
+echo "#  Na jaký počítač instalujete?  #"
+echo "#  Zbook = 1                     #"
+echo "#  Probook = 2                   #"
+echo "#  Mirantb = 3                   #"
+echo "##################################"
+
+while true; do
+    read -r -n 1 -p " Vyberte 1/2/3: " answer
+    case $answer in
+        [1]* ) echo
+               echo "####################################"
+               echo "#                                  #"
+               echo "#  Zvolili jste Zbook...           #"
+               echo "#                                  #"
+               echo "####################################"
+               echo
+               sleep 4 
+               break;;
+        [2]* ) echo
+               echo "######################################"
+               echo "#                                    #"
+               echo "#  Zvolili jste Probook...           #"
+               echo "#                                    #"
+               echo "######################################"
+               echo
+               sleep 4 
+               break;;
+        [3]* ) echo
+               echo "######################################"
+               echo "#                                    #"
+               echo "#  Zvolili jste Mirantb...           #"
+               echo "#                                    #"
+               echo "######################################"
+               echo
+               sleep 4
+               break;;
+         * ) echo "Vyberte 1, 2, nebo 3";;
+     esac
+done
+
+echo
 echo "####################"
 echo "#  Instalace Niri  #"
 echo "####################"
@@ -50,16 +93,7 @@ sudo apt -y install \
 cd $HOME
 mkdir Dokumenty Videa Hudba Stažené Templates
 
-echo
-echo "##################################"
-echo "#  Na jaký počítač instalujete?  #"
-echo "#  Zbook = 1                     #"
-echo "#  Probook = 2                   #"
-echo "#  Mirantb = 3                   #"
-echo "##################################"
-
 while true; do
-    read -r -n 1 -p " Vyberte 1/2/3: " answer
     case $answer in
         [1]* ) echo
                echo "####################################"
