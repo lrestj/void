@@ -186,7 +186,7 @@ echo "#                 #"
 echo "#  Grub settings  #"
 echo "#                 #"
 echo "###################"
-sudo sed -i '11iGRUB_THEME=/home/libor/.dotfiles/TelaGrubTheme/theme.txt' /etc/default/grub
+sudo sed -i '11iGRUB_THEME=/home/libor/.dotfiles/voidGrubTheme/theme.txt' /etc/default/grub
 sudo update-grub
 
 echo
