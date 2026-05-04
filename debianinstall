@@ -218,6 +218,7 @@ sleep 1
 sudo sed -i 's/managed=false/managed=true/g' /etc/NetworkManager/NetworkManager.conf
 sudo rm -r /etc/network/
 sudo apt -y remove ifupdown 
+sudo powerprofilesctl set performance
 
 echo
 echo "#####################"

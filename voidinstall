@@ -197,6 +197,7 @@ echo "#                       #"
 echo "#########################"
 echo
 bash $HOME/.local/bin/inreconf
+sudo powerprofilesctl set performance
 
 echo
 echo "###################"
