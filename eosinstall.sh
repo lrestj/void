@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 echo
 echo "##################################"
 echo "#  Na jaký počítač instalujete?  #"
