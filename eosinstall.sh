@@ -44,9 +44,9 @@ while true; do
      esac
 done
 
-PacmanApps=" bemoji font-manager cinnamon-translations cliphist evince foot fuzzel gvfs glxinfo galculator galculator jq network-manager-applet xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk udiskie simple-scan mako ttf-nerd-fonts-symbols ttf-hack-nerd awesome-terminal-fonts yazi fish waybar wlsunset geany grim libreoffice-fresh-cs qt6ct brightnessctl btop fastfetch papirus-icon-theme qutebrowser gparted mpv nemo vlc pamixer pdfarranger rclone qjackctl niri swaybg swayidle swaylock xournalpp zip p7zip wlsunset kitty kwalletmanager kwallet-pam nwg-look xorg-xwayland wayland-protocols 
+PacmanApps="font-manager cinnamon-translations cliphist evince foot fuzzel gvfs glxinfo galculator galculator jq network-manager-applet xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk udiskie simple-scan mako ttf-nerd-fonts-symbols ttf-hack-nerd awesome-terminal-fonts yazi fish waybar wlsunset geany grim libreoffice-fresh-cs qt6ct brightnessctl btop fastfetch papirus-icon-theme qutebrowser gparted mpv nemo vlc pamixer pdfarranger rclone qjackctl niri swaybg swayidle swaylock xournalpp zip p7zip wlsunset kitty kwalletmanager kwallet-pam nwg-look xorg-xwayland wayland-protocols" 
 
-AurApps="bibata-cursor-theme waypaper xfce-polkit" 
+AurApps="bemoji bibata-cursor-theme waypaper xfce-polkit" 
 
 echo "##################################################"
 echo "#  Spouštím instalaci, můžete zrušit CTRL+C ...  #"
@@ -148,6 +148,7 @@ echo "############################"
 sudo cp -rf $HOME/.dotfiles/getty@tty1.service.d /etc/systemd/system/
 sudo cp -rv /home/libor/.dotfiles/journald.conf.d /etc/systemd/
 mkdir -p Templates Stažené Dokumenty Hudba Videa
+sudo powerprofilesctl set performance
 
 echo
 echo "################################"
