@@ -42,9 +42,9 @@ while true; do
      esac
 done
 
-PacmanApps="font-manager cinnamon-translations cliphist evince foot fuzzel gvfs glxinfo galculator greetd greetd-tuigreet galculator jq network-manager-applet xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk udiskie simple-scan breeze mako ttf-nerd-fonts-symbols ttf-hack-nerd awesome-terminal-fonts yazi fish waybar lxqt-policykit wlsunset geany grim libreoffice-fresh-cs qt6ct brightnessctl btop fastfetch papirus-icon-theme qutebrowser gparted mpv nemo vlc pamixer pdfarranger rclone qjackctl niri swaybg swayidle swaylock xournalpp zip p7zip wlsunset kitty kwalletmanager kwallet-pam nwg-look xorg-xwayland wayland-protocols 
+PacmanApps=" bemoji font-manager cinnamon-translations cliphist evince foot fuzzel gvfs glxinfo galculator greetd greetd-tuigreet galculator jq network-manager-applet xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk udiskie simple-scan breeze mako ttf-nerd-fonts-symbols ttf-hack-nerd awesome-terminal-fonts yazi fish waybar lxqt-policykit wlsunset geany grim libreoffice-fresh-cs qt6ct brightnessctl btop fastfetch papirus-icon-theme qutebrowser gparted mpv nemo vlc pamixer pdfarranger rclone qjackctl niri swaybg swayidle swaylock xournalpp zip p7zip wlsunset kitty kwalletmanager kwallet-pam nwg-look xorg-xwayland wayland-protocols 
 
-AurApps="autofs bemoji bibata-cursor-theme waypaper" 
+AurApps="bibata-cursor-theme waypaper" 
 
 echo "##################################################"
 echo "#  Spouštím instalaci, můžete zrušit CTRL+C ...  #"
@@ -132,23 +132,19 @@ echo "####################"
 echo vm.swappiness=10 | sudo tee /etc/sysctl.d/99-swappiness.conf
 echo -e "\n"
 
-echo "#########################"
-echo "#  Synology nfs shares  #"
-echo "#########################"
-echo -e "\n"
-sudo mkdir /nfs &&
-sudo chmod -R ugo+rwx /nfs
-sudo cp -f /home/libor/.dotfiles/autofs/* /etc/autofs/
-sudo systemctl enable autofs.service
-sleep 4
-
 echo
-echo "######################"
-echo "#  Nastavuji Greetd  #"
-echo "######################"
-sudo cp -f ~/.dotfiles/greetd/* /etc/greetd/
-sudo systemctl enable greetd.service
+echo "###########################"
+echo "#  Nfs Synology settings  #"
+echo "###########################"
+sudo cp -v /etc/fstab /etc/fstab.bak
+cat $HOME/.dotfiles/nfs2fstab.txt | sudo tee -a /etc/fstab >> /dev/null
 
+echo    
+echo "############################"
+echo "#  Autologin & swappiness  #"
+echo "############################"
+sudo cp -rf $HOME/.dotfiles/getty@tty1.service.d /etc/systemd/system/
+sudo cp -rv /home/libor/.dotfiles/journald.conf.d /etc/systemd/
 mkdir -p Templates Stažené Dokumenty Hudba Videa
 
 echo
