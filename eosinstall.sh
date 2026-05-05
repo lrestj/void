@@ -65,7 +65,7 @@ qjackctl qt6ct qutebrowser rclone \
 simple-scan swaybg swayidle swaylock \
 ttf-hack-nerd ttf-nerd-fonts-symbols udiskie vlc \
 waybar wayland-protocols wlsunset \
-xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk xwayland-satellite xournalpp \
+xdg-desktop-portal-gnome xwayland-satellite xournalpp \
 yazi zenity zip 
 
 echo
