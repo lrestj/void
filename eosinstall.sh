@@ -74,68 +74,66 @@ echo "#  Instalace z repozitáře Aur  #"
 echo "################################"
 yay -S --noconfirm bemoji bibata-cursor-theme waypaper xfce-polkit
 
-    case $answer in
-        [1]* ) echo
-               echo "####################################"
-               echo "#                                  #"
-               echo "#  Probíhá konfigurace Zbook...    #"
-               echo "#                                  #"
-               echo "####################################"
-               sudo pacman -S nvidia-inst
-               nvidia-inst --prime
-               git clone --bare -b endeavourOS https://github.com/lrestj/probook.git $HOME/.cfg.git
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
-               echo
-               echo "###################################"
-               echo "#  Konfigurace git repozitáře...  #"
-               echo "###################################"
-               git config --global user.email "rest@seznam.cz"
-               git config --global user.name "LrestJ"
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/voidlinux.git
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/voidlinux.git
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
-               ;;
-        [2]* ) echo
-               echo "######################################"
-               echo "#                                    #"
-               echo "#  Probíhá konfigurace Probook...    #"
-               echo "#                                    #"
-               echo "######################################"
-               git clone --bare -b endeavourOS https://github.com/lrestj/probook.git $HOME/.cfg.git
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
-               echo
-               echo "###################################"
-               echo "#  Konfigurace git repozitáře...  #"
-               echo "###################################"
-               git config --global user.email "rest@seznam.cz"
-               git config --global user.name "LrestJ"
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/probook.git
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/probook.git
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
-               ;;
-        [3]* ) echo
-               echo "######################################"
-               echo "#                                    #"
-               echo "#  Probíhá konfigurace Mirantb...    #"
-               echo "#                                    #"
-               echo "######################################"
-               git clone --bare -b endeavourOS https://github.com/lrestj/probook.git $HOME/.cfg.git
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
-               echo
-               echo "###################################"
-               echo "#  Konfigurace git repozitáře...  #"
-               echo "###################################"
-               git config --global user.email "rest@seznam.cz"
-               git config --global user.name "LrestJ"
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/mirantb.git
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/mirantb.git
-               git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
-               ;;
-         * ) echo "Vyberte 1, 2, nebo 3";;
-     esac
+case $answer in
+    [1]* ) echo
+           echo "####################################"
+           echo "#                                  #"
+           echo "#  Probíhá konfigurace Zbook...    #"
+           echo "#                                  #"
+           echo "####################################"
+           git clone --bare -b endeavourOS https://github.com/lrestj/probook.git $HOME/.cfg.git
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
+           echo
+           echo "###################################"
+           echo "#  Konfigurace git repozitáře...  #"
+           echo "###################################"
+           git config --global user.email "rest@seznam.cz"
+           git config --global user.name "LrestJ"
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/zbook.git
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/zbook.git
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
+           ;;
+    [2]* ) echo
+           echo "######################################"
+           echo "#                                    #"
+           echo "#  Probíhá konfigurace Probook...    #"
+           echo "#                                    #"
+           echo "######################################"
+           git clone --bare -b endeavourOS https://github.com/lrestj/probook.git $HOME/.cfg.git
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
+           echo
+           echo "###################################"
+           echo "#  Konfigurace git repozitáře...  #"
+           echo "###################################"
+           git config --global user.email "rest@seznam.cz"
+           git config --global user.name "LrestJ"
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/probook.git
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/probook.git
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
+           ;;
+    [3]* ) echo
+           echo "######################################"
+           echo "#                                    #"
+           echo "#  Probíhá konfigurace Mirantb...    #"
+           echo "#                                    #"
+           echo "######################################"
+           git clone --bare -b endeavourOS https://github.com/lrestj/probook.git $HOME/.cfg.git
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME checkout -f &&
+           echo
+           echo "###################################"
+           echo "#  Konfigurace git repozitáře...  #"
+           echo "###################################"
+           git config --global user.email "rest@seznam.cz"
+           git config --global user.name "LrestJ"
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote remove origin
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add github git@github.com:lrestj/mirantb.git
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote add gitlab git@gitlab.com:lrestj/mirantb.git
+           git --git-dir=$HOME/.cfg.git/ --work-tree=$HOME remote -v
+           ;;
+     * ) echo "Vyberte 1, 2, nebo 3";;
+esac
   
 echo "####################"
 echo "#  Nastavení swap  #"
@@ -175,5 +173,19 @@ echo
 echo "#####################"
 echo "#  KONEC INSTALACE  #" 
 echo "#####################"
+echo
+echo "####################################"
+echo "#  Restartovat do nového systému?  #"
+echo "####################################"
+while true; do
+    read -r -n 1 -p "Vyberte (A/N): " answer
+    case $answer in
+        [Aa]* ) echo -e "\n Restartuji..."
+                sleep 1
+                sudo reboot; break;;
+        [Nn]* ) exit;;
+        * ) echo -e "\nVyberte A nebo N.";;
+    esac
+done
 
-##### END OF FILE #####
+#### END OF FILE #####
