@@ -57,7 +57,7 @@ echo "#################################"
 sudo pacman -S --noconfirm \
 awesome-terminal-fonts baobab brightnessctl btop \
 cinnamon-translations cliphist evince fastfetch fish font-manager foot fuzzel \
-galculator geany glxinfo gparted grim gvfs jq \
+galculator gcolor3 geany glxinfo gparted grim gvfs jq \
 kitty kwallet-pam kwalletmanager libreoffice-fresh-cs \
 mako mpv nemo network-manager-applet niri nwg-look \
 p7zip pamixer papirus-icon-theme pdfarranger \
